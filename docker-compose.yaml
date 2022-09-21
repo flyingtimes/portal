@@ -1,0 +1,9 @@
+version: "3"
+services:
+  python3:
+    build:
+      context: ./docker/python3/
+      dockerfile: ./Dockerfile
+    image: env_python3:alpine
+    container_name: python3
+    command: python
